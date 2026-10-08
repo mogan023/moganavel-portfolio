@@ -1,0 +1,1 @@
+package com.mogan.portfolio.repo; import com.mogan.portfolio.model.PortfolioItem;import org.springframework.data.jpa.repository.JpaRepository;import java.util.*; public interface PortfolioItemRepository extends JpaRepository<PortfolioItem,Long>{List<PortfolioItem> findByPublishedTrueOrderByTypeAscSortOrderAsc();}

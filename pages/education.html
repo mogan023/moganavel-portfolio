@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Education | Moganavel Venkatachalam</title>
+
+    <meta name="description"
+        content="Education journey of Moganavel Venkatachalam.">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="../index.html" class="brand">
+            <span class="brand-mark">M</span>
+            <span class="brand-name">MOGANAVEL</span>
+        </a>
+
+        <div class="header-controls">
+
+            <!-- LANGUAGE -->
+
+            <div class="control-wrapper">
+
+                <button class="header-control"
+                    id="languageButton"
+                    aria-label="Select language">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                    <span id="currentLanguage">EN</span>
+
+                    <i class="fa-solid fa-chevron-down control-arrow"></i>
+
+                </button>
+
+                <div class="language-dropdown"
+                    id="languageDropdown">
+
+                    <button data-language="en">
+                        🇬🇧 English
+                    </button>
+
+                    <button data-language="ta">
+                        🇮🇳 தமிழ்
+                    </button>
+
+                    <button data-language="hi">
+                        🇮🇳 हिन्दी
+                    </button>
+
+                    <button data-language="ru">
+                        🇷🇺 Русский
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- THEME -->
+
+            <button class="header-control theme-button"
+                id="themeButton"
+                aria-label="Change theme">
+
+                <i class="fa-solid fa-circle-half-stroke"
+                    id="themeIcon"></i>
+
+            </button>
+
+
+            <!-- MENU -->
+
+            <button class="menu-button"
+                id="menuButton"
+                aria-label="Open navigation"
+                aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     SIDE MENU
+===================================================== -->
+
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<aside class="side-menu" id="sideMenu">
+
+    <div class="side-menu-header">
+
+        <div>
+            <span class="menu-label" data-i18n="navigation">
+                Navigation
+            </span>
+
+            <h2 data-i18n="explore">
+                Explore
+            </h2>
+        </div>
+
+        <button class="menu-close"
+            id="menuClose"
+            aria-label="Close menu">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+    </div>
+
+
+    <nav class="main-navigation">
+
+        <a href="../index.html" class="nav-link">
+            <span class="nav-number">01</span>
+            <span data-i18n="home">Home</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="about.html" class="nav-link">
+            <span class="nav-number">02</span>
+            <span data-i18n="about">About Me</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="education.html" class="nav-link active">
+            <span class="nav-number">03</span>
+            <span data-i18n="education">Education</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="experience.html" class="nav-link">
+            <span class="nav-number">04</span>
+            <span data-i18n="experience">Experience</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="skills.html" class="nav-link">
+            <span class="nav-number">05</span>
+            <span data-i18n="skills">Skills</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="projects.html" class="nav-link">
+            <span class="nav-number">06</span>
+            <span data-i18n="projects">Projects</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="achievements.html" class="nav-link">
+            <span class="nav-number">07</span>
+            <span data-i18n="achievements">Achievements</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="certificates.html" class="nav-link">
+            <span class="nav-number">08</span>
+            <span data-i18n="certificates">Certificates</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="interactive.html" class="nav-link">
+            <span class="nav-number">09</span>
+            <span data-i18n="interactive">Interactive Zone</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="contact.html" class="nav-link">
+            <span class="nav-number">10</span>
+            <span data-i18n="contact">Contact</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </nav>
+
+
+    <div class="side-menu-footer">
+
+        <span data-i18n="menuFooter">
+            Let's build something meaningful.
+        </span>
+
+        <div class="menu-socials">
+
+            <a href="#" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="#" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="#" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</aside>
+
+
+<!-- =====================================================
+     EDUCATION PAGE
+===================================================== -->
+
+<main class="inner-page">
+
+    <section class="inner-hero">
+
+        <div class="section-container">
+
+            <span class="section-eyebrow">
+                <i class="fa-solid fa-graduation-cap"></i>
+                03 / Education
+            </span>
+
+            <h1>
+                My <span>Education</span>
+            </h1>
+
+            <p>
+                The academic journey that built my foundation
+                in technology, artificial intelligence and
+                data science.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- EDUCATION TIMELINE -->
+
+    <section class="education-section">
+
+        <div class="section-container">
+
+            <div class="education-timeline">
+
+
+                <!-- BTECH -->
+
+                <article class="education-item featured">
+
+                    <div class="education-marker">
+
+                        <span></span>
+
+                    </div>
+
+
+                    <div class="education-card">
+
+                        <div class="education-card-top">
+
+                            <span class="education-period">
+                                2021 — 2025
+                            </span>
+
+                            <span class="education-status">
+                                Completed
+                            </span>
+
+                        </div>
+
+
+                        <div class="education-icon">
+
+                            <i class="fa-solid fa-microchip"></i>
+
+                        </div>
+
+
+                        <h2>
+                            B.Tech (Hons.)
+                        </h2>
+
+                        <h3>
+                            Artificial Intelligence
+                            and Data Science
+                        </h3>
+
+
+                        <p class="institution">
+                            Dhirajlal Gandhi College
+                            of Technology
+                        </p>
+
+
+                        <div class="education-result">
+
+                            <div>
+
+                                <span>
+                                    CGPA
+                                </span>
+
+                                <strong>
+                                    8.35
+                                </strong>
+
+                            </div>
+
+                            <i class="fa-solid fa-arrow-up-right-dots"></i>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- HSC -->
+
+                <article class="education-item">
+
+                    <div class="education-marker">
+
+                        <span></span>
+
+                    </div>
+
+
+                    <div class="education-card">
+
+                        <div class="education-card-top">
+
+                            <span class="education-period">
+                                2018 — 2019
+                            </span>
+
+                        </div>
+
+
+                        <div class="education-icon">
+
+                            <i class="fa-solid fa-school"></i>
+
+                        </div>
+
+
+                        <h2>
+                            HSC
+                        </h2>
+
+
+                        <p class="institution">
+                            Dawn Matriculation
+                            Higher Secondary School
+                        </p>
+
+
+                        <div class="education-result">
+
+                            <div>
+
+                                <span>
+                                    Percentage
+                                </span>
+
+                                <strong>
+                                    85.5%
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SSLC -->
+
+                <article class="education-item">
+
+                    <div class="education-marker">
+
+                        <span></span>
+
+                    </div>
+
+
+                    <div class="education-card">
+
+                        <div class="education-card-top">
+
+                            <span class="education-period">
+                                2016 — 2017
+                            </span>
+
+                        </div>
+
+
+                        <div class="education-icon">
+
+                            <i class="fa-solid fa-book-open"></i>
+
+                        </div>
+
+
+                        <h2>
+                            SSLC
+                        </h2>
+
+
+                        <p class="institution">
+                            Carmel Matriculation
+                            Higher Secondary School
+                        </p>
+
+
+                        <div class="education-result">
+
+                            <div>
+
+                                <span>
+                                    Percentage
+                                </span>
+
+                                <strong>
+                                    97.2%
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EDUCATION SUMMARY -->
+
+    <section class="education-summary">
+
+        <div class="section-container">
+
+            <div class="education-summary-card">
+
+                <div>
+
+                    <span class="section-eyebrow">
+                        <i class="fa-solid fa-route"></i>
+                        Academic Journey
+                    </span>
+
+                    <h2>
+                        From fundamentals to
+                        <span>technology.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="education-summary-number">
+                    08.35
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+    <div class="footer-inner">
+
+        <div class="footer-brand">
+
+            <span class="brand-mark">M</span>
+
+            <div>
+
+                <strong>
+                    Moganavel Venkatachalam
+                </strong>
+
+                <span>
+                    AI & Data Science Developer
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-copy">
+
+            <p>
+                ©
+                <span id="copyrightYear"></span>
+                Moganavel Venkatachalam
+            </p>
+
+            <span>
+                All Rights Reserved.
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

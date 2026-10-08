@@ -1,0 +1,43 @@
+# IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Java / Maven
+target/
+*.class
+
+# Logs
+*.log
+logs/
+
+# Local databases
+data/
+*.mv.db
+*.trace.db
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Build output
+dist/
+build/
+
+# Local uploads
+uploads/
+
+# IDE
+.vscode/

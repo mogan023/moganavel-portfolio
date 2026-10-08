@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Interactive Zone | Moganavel Venkatachalam</title>
+
+    <meta name="description"
+        content="Interactive zone of Moganavel Venkatachalam's portfolio.">
+
+    <link rel="stylesheet"
+        href="../css/style.css">
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="../index.html"
+            class="brand">
+
+            <span class="brand-mark">
+                M
+            </span>
+
+            <span class="brand-name">
+                MOGANAVEL
+            </span>
+
+        </a>
+
+
+        <div class="header-controls">
+
+
+            <!-- LANGUAGE -->
+
+            <div class="control-wrapper">
+
+                <button
+                    class="header-control"
+                    id="languageButton"
+                    aria-label="Select language">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                    <span id="currentLanguage">
+                        EN
+                    </span>
+
+                    <i
+                        class="fa-solid fa-chevron-down control-arrow">
+                    </i>
+
+                </button>
+
+
+                <div
+                    class="language-dropdown"
+                    id="languageDropdown">
+
+                    <button data-language="en">
+                        🇬🇧 English
+                    </button>
+
+                    <button data-language="ta">
+                        🇮🇳 தமிழ்
+                    </button>
+
+                    <button data-language="hi">
+                        🇮🇳 हिन्दी
+                    </button>
+
+                    <button data-language="ru">
+                        🇷🇺 Русский
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- THEME -->
+
+            <button
+                class="header-control theme-button"
+                id="themeButton"
+                aria-label="Change theme">
+
+                <i
+                    class="fa-solid fa-circle-half-stroke"
+                    id="themeIcon">
+                </i>
+
+            </button>
+
+
+            <!-- MENU -->
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Open navigation"
+                aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     SIDE MENU
+===================================================== -->
+
+<div
+    class="menu-overlay"
+    id="menuOverlay">
+</div>
+
+
+<aside
+    class="side-menu"
+    id="sideMenu">
+
+
+    <div class="side-menu-header">
+
+        <div>
+
+            <span class="menu-label">
+                Navigation
+            </span>
+
+            <h2>
+                Explore
+            </h2>
+
+        </div>
+
+
+        <button
+            class="menu-close"
+            id="menuClose">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+
+    <nav class="main-navigation">
+
+
+        <a
+            href="../index.html"
+            class="nav-link">
+
+            <span class="nav-number">01</span>
+
+            <span>Home</span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a
+            href="about.html"
+            class="nav-link">
+
+            <span class="nav-number">02</span>
+
+            <span>About Me</span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a
+            href="education.html"
+            class="nav-link">
+
+            <span class="nav-number">03</span>
+
+            <span>Education</span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a
+            href="experience.html"
+            class="nav-link">
+
+            <span class="nav-number">04</span>
+
+            <span>Experience</span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a
+            href="skills.html"
+            class="nav-link">
+
+            <span class="nav-number">05</span>
+
+            <span>Skills</span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a
+            href="projects.html"
+            class="nav-link">
+
+            <span class="nav-number">06</span>
+
+            <span>Projects</span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a
+            href="achievements.html"
+            class="nav-link">
+
+            <span class="nav-number">07</span>
+
+            <span>Achievements</span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a
+            href="certificates.html"
+            class="nav-link">
+
+            <span class="nav-number">08</span>
+
+            <span>Certificates</span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a
+            href="interactive.html"
+            class="nav-link active">
+
+            <span class="nav-number">09</span>
+
+            <span>Interactive Zone</span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a
+            href="contact.html"
+            class="nav-link">
+
+            <span class="nav-number">10</span>
+
+            <span>Contact</span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+    </nav>
+
+
+    <div class="side-menu-footer">
+
+        <span>
+            Let's build something meaningful.
+        </span>
+
+
+        <div class="menu-socials">
+
+            <a href="#">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</aside>
+
+
+<!-- =====================================================
+     INTERACTIVE PAGE
+===================================================== -->
+
+<main class="inner-page">
+
+
+    <!-- HERO -->
+
+    <section class="inner-hero">
+
+        <div class="section-container">
+
+            <span class="section-eyebrow">
+
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                09 / Interactive Zone
+
+            </span>
+
+
+            <h1>
+                Explore. <span>Interact.</span>
+            </h1>
+
+
+            <p>
+                A small corner of the portfolio where
+                information becomes interactive.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         LIVE CLOCK
+    ================================================== -->
+
+    <section class="live-clock-section">
+
+        <div class="section-container">
+
+
+            <div class="live-clock-card">
+
+
+                <div class="clock-decoration">
+
+                    <div class="clock-ring ring-one"></div>
+
+                    <div class="clock-ring ring-two"></div>
+
+                    <div class="clock-dot"></div>
+
+                </div>
+
+
+                <div class="clock-content">
+
+                    <span class="clock-label">
+
+                        <i class="fa-solid fa-circle"></i>
+
+                        Live Local Time
+
+                    </span>
+
+
+                    <div
+                        class="live-time"
+                        id="liveTime">
+
+                        00:00:00
+
+                    </div>
+
+
+                    <div
+                        class="live-date"
+                        id="liveDate">
+
+                        Loading date...
+
+                    </div>
+
+
+                    <div class="timezone">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <span id="timeZone">
+                            Detecting timezone...
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="clock-status">
+
+                    <span>
+                        REAL TIME
+                    </span>
+
+                    <div class="status-dot"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         QUICK FACTS
+    ================================================== -->
+
+    <section class="interactive-facts">
+
+        <div class="section-container">
+
+
+            <div class="section-heading">
+
+                <span class="section-eyebrow">
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                    Quick Facts
+
+                </span>
+
+
+                <h2>
+                    A little more
+                    <span>about me.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="fact-grid">
+
+
+                <div class="fact-card">
+
+                    <div class="fact-icon">
+
+                        <i class="fa-solid fa-graduation-cap"></i>
+
+                    </div>
+
+                    <span>
+                        Background
+                    </span>
+
+                    <strong>
+                        AI & Data Science
+                    </strong>
+
+                    <p>
+                        Engineering background with a
+                        focus on Artificial Intelligence
+                        and Data Science.
+                    </p>
+
+                </div>
+
+
+                <div class="fact-card">
+
+                    <div class="fact-icon">
+
+                        <i class="fa-solid fa-code"></i>
+
+                    </div>
+
+                    <span>
+                        Building
+                    </span>
+
+                    <strong>
+                        Web & AI Projects
+                    </strong>
+
+                    <p>
+                        Exploring practical applications
+                        through software, AI and web
+                        development.
+                    </p>
+
+                </div>
+
+
+                <div class="fact-card">
+
+                    <div class="fact-icon">
+
+                        <i class="fa-solid fa-language"></i>
+
+                    </div>
+
+                    <span>
+                        Languages
+                    </span>
+
+                    <strong>
+                        English · தமிழ் · हिन्दी · Русский
+                    </strong>
+
+                    <p>
+                        This portfolio is designed to
+                        support multiple languages.
+                    </p>
+
+                </div>
+
+
+                <div class="fact-card">
+
+                    <div class="fact-icon">
+
+                        <i class="fa-solid fa-compass"></i>
+
+                    </div>
+
+                    <span>
+                        Exploring
+                    </span>
+
+                    <strong>
+                        Technology & Ideas
+                    </strong>
+
+                    <p>
+                        Always looking for interesting
+                        ideas to turn into useful projects.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         TECH INTERACTION
+    ================================================== -->
+
+    <section class="tech-interaction">
+
+        <div class="section-container">
+
+
+            <div class="section-heading centered-heading">
+
+                <span class="section-eyebrow">
+
+                    <i class="fa-solid fa-microchip"></i>
+
+                    Technology Stack
+
+                </span>
+
+
+                <h2>
+                    Technologies I
+                    <span>explore.</span>
+                </h2>
+
+
+                <p>
+                    Hover over a technology to reveal
+                    a little more.
+                </p>
+
+            </div>
+
+
+            <div class="tech-orbit">
+
+
+                <div class="orbit-ring orbit-ring-one"></div>
+
+                <div class="orbit-ring orbit-ring-two"></div>
+
+
+                <div class="orbit-center">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    <span>
+                        BUILD
+                    </span>
+
+                </div>
+
+
+                <!-- PYTHON -->
+
+                <button
+                    class="tech-node tech-python"
+                    data-tech="Python"
+                    data-description="Programming language used across AI, Data Science and automation projects."
+                    data-icon="fa-brands fa-python">
+
+                    <i class="fa-brands fa-python"></i>
+
+                    <span>
+                        Python
+                    </span>
+
+                </button>
+
+
+                <!-- JAVASCRIPT -->
+
+                <button
+                    class="tech-node tech-js"
+                    data-tech="JavaScript"
+                    data-description="Used for interactive and responsive web applications."
+                    data-icon="fa-brands fa-js">
+
+                    <i class="fa-brands fa-js"></i>
+
+                    <span>
+                        JavaScript
+                    </span>
+
+                </button>
+
+
+                <!-- HTML -->
+
+                <button
+                    class="tech-node tech-html"
+                    data-tech="HTML"
+                    data-description="The structural foundation of the web interfaces I build."
+                    data-icon="fa-brands fa-html5">
+
+                    <i class="fa-brands fa-html5"></i>
+
+                    <span>
+                        HTML
+                    </span>
+
+                </button>
+
+
+                <!-- CSS -->
+
+                <button
+                    class="tech-node tech-css"
+                    data-tech="CSS"
+                    data-description="Used to create responsive layouts, animations and visual experiences."
+                    data-icon="fa-brands fa-css3-alt">
+
+                    <i class="fa-brands fa-css3-alt"></i>
+
+                    <span>
+                        CSS
+                    </span>
+
+                </button>
+
+
+                <!-- AI -->
+
+                <button
+                    class="tech-node tech-ai"
+                    data-tech="Artificial Intelligence"
+                    data-description="A major area of interest across machine learning and intelligent applications."
+                    data-icon="fa-solid fa-brain">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                    <span>
+                        AI
+                    </span>
+
+                </button>
+
+
+                <!-- DATA -->
+
+                <button
+                    class="tech-node tech-data"
+                    data-tech="Data Science"
+                    data-description="Working with data, analysis, patterns and meaningful insights."
+                    data-icon="fa-solid fa-chart-simple">
+
+                    <i class="fa-solid fa-chart-simple"></i>
+
+                    <span>
+                        Data
+                    </span>
+
+                </button>
+
+
+            </div>
+
+
+            <!-- TECH DESCRIPTION -->
+
+            <div
+                class="tech-description"
+                id="techDescription">
+
+                <div class="tech-description-icon">
+
+                    <i
+                        class="fa-solid fa-hand-pointer"
+                        id="techDescriptionIcon">
+                    </i>
+
+                </div>
+
+
+                <div>
+
+                    <span id="techDescriptionTitle">
+                        Explore a technology
+                    </span>
+
+                    <p id="techDescriptionText">
+                        Hover or click on any technology
+                        above to see what it represents.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         DEVELOPER QUOTE
+    ================================================== -->
+
+    <section class="developer-quote-section">
+
+        <div class="section-container">
+
+
+            <div class="developer-quote-card">
+
+
+                <div class="quote-mark">
+                    "
+                </div>
+
+
+                <div class="quote-content">
+
+                    <span>
+                        Developer Thought
+                    </span>
+
+
+                    <blockquote id="developerQuote">
+
+                        The best way to learn technology
+                        is to build something with it.
+
+                    </blockquote>
+
+
+                    <button
+                        id="newQuoteButton"
+                        class="new-quote-button">
+
+                        <i class="fa-solid fa-rotate"></i>
+
+                        New Thought
+
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         CURRENT FOCUS
+    ================================================== -->
+
+    <section class="current-focus-section">
+
+        <div class="section-container">
+
+
+            <div class="current-focus-card">
+
+
+                <div class="focus-left">
+
+                    <span class="section-eyebrow">
+
+                        <i class="fa-solid fa-crosshairs"></i>
+
+                        Current Focus
+
+                    </span>
+
+
+                    <h2>
+                        Learning today.
+                        <span>Building tomorrow.</span>
+                    </h2>
+
+
+                    <p>
+                        This portfolio itself is an evolving
+                        project. New skills, experiments and
+                        ideas can be added as the journey
+                        continues.
+                    </p>
+
+                </div>
+
+
+                <div class="focus-right">
+
+
+                    <div class="focus-item">
+
+                        <span>
+                            01
+                        </span>
+
+                        <strong>
+                            AI & Data Science
+                        </strong>
+
+                    </div>
+
+
+                    <div class="focus-item">
+
+                        <span>
+                            02
+                        </span>
+
+                        <strong>
+                            Full-Stack Development
+                        </strong>
+
+                    </div>
+
+
+                    <div class="focus-item">
+
+                        <span>
+                            03
+                        </span>
+
+                        <strong>
+                            Building Real Projects
+                        </strong>
+
+                    </div>
+
+
+                    <div class="focus-item">
+
+                        <span>
+                            04
+                        </span>
+
+                        <strong>
+                            Continuous Learning
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+    <div class="footer-inner">
+
+
+        <div class="footer-brand">
+
+            <span class="brand-mark">
+                M
+            </span>
+
+
+            <div>
+
+                <strong>
+                    Moganavel Venkatachalam
+                </strong>
+
+                <span>
+                    AI & Data Science Developer
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-copy">
+
+            <p>
+
+                ©
+                <span id="copyrightYear"></span>
+                Moganavel Venkatachalam
+
+            </p>
+
+
+            <span>
+                All Rights Reserved.
+            </span>
+
+        </div>
+
+
+    </div>
+
+</footer>
+
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>

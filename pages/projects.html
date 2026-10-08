@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | Moganavel Venkatachalam</title>
+
+    <meta name="description"
+        content="Projects by Moganavel Venkatachalam - AI, Data Science and Web Development.">
+
+    <link rel="stylesheet"
+        href="../css/style.css">
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="../index.html"
+            class="brand">
+
+            <span class="brand-mark">
+                M
+            </span>
+
+            <span class="brand-name">
+                MOGANAVEL
+            </span>
+
+        </a>
+
+
+        <div class="header-controls">
+
+            <!-- LANGUAGE -->
+
+            <div class="control-wrapper">
+
+                <button class="header-control"
+                    id="languageButton"
+                    aria-label="Select language">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                    <span id="currentLanguage">
+                        EN
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down control-arrow"></i>
+
+                </button>
+
+
+                <div class="language-dropdown"
+                    id="languageDropdown">
+
+                    <button data-language="en">
+                        🇬🇧 English
+                    </button>
+
+                    <button data-language="ta">
+                        🇮🇳 தமிழ்
+                    </button>
+
+                    <button data-language="hi">
+                        🇮🇳 हिन्दी
+                    </button>
+
+                    <button data-language="ru">
+                        🇷🇺 Русский
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- THEME -->
+
+            <button class="header-control theme-button"
+                id="themeButton"
+                aria-label="Change theme">
+
+                <i class="fa-solid fa-circle-half-stroke"
+                    id="themeIcon"></i>
+
+            </button>
+
+
+            <!-- MENU -->
+
+            <button class="menu-button"
+                id="menuButton"
+                aria-label="Open navigation"
+                aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     SIDE MENU
+===================================================== -->
+
+<div class="menu-overlay"
+    id="menuOverlay"></div>
+
+
+<aside class="side-menu"
+    id="sideMenu">
+
+    <div class="side-menu-header">
+
+        <div>
+
+            <span class="menu-label"
+                data-i18n="navigation">
+                Navigation
+            </span>
+
+            <h2 data-i18n="explore">
+                Explore
+            </h2>
+
+        </div>
+
+
+        <button class="menu-close"
+            id="menuClose">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+
+    <nav class="main-navigation">
+
+        <a href="../index.html"
+            class="nav-link">
+
+            <span class="nav-number">01</span>
+
+            <span data-i18n="home">
+                Home
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="about.html"
+            class="nav-link">
+
+            <span class="nav-number">02</span>
+
+            <span data-i18n="about">
+                About Me
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="education.html"
+            class="nav-link">
+
+            <span class="nav-number">03</span>
+
+            <span data-i18n="education">
+                Education
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="experience.html"
+            class="nav-link">
+
+            <span class="nav-number">04</span>
+
+            <span data-i18n="experience">
+                Experience
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="skills.html"
+            class="nav-link">
+
+            <span class="nav-number">05</span>
+
+            <span data-i18n="skills">
+                Skills
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="projects.html"
+            class="nav-link active">
+
+            <span class="nav-number">06</span>
+
+            <span data-i18n="projects">
+                Projects
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="achievements.html"
+            class="nav-link">
+
+            <span class="nav-number">07</span>
+
+            <span data-i18n="achievements">
+                Achievements
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="certificates.html"
+            class="nav-link">
+
+            <span class="nav-number">08</span>
+
+            <span data-i18n="certificates">
+                Certificates
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="interactive.html"
+            class="nav-link">
+
+            <span class="nav-number">09</span>
+
+            <span data-i18n="interactive">
+                Interactive Zone
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="contact.html"
+            class="nav-link">
+
+            <span class="nav-number">10</span>
+
+            <span data-i18n="contact">
+                Contact
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+    </nav>
+
+
+    <div class="side-menu-footer">
+
+        <span data-i18n="menuFooter">
+            Let's build something meaningful.
+        </span>
+
+
+        <div class="menu-socials">
+
+            <a href="#">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</aside>
+
+
+<!-- =====================================================
+     PROJECTS
+===================================================== -->
+
+<main class="inner-page">
+
+
+    <!-- PAGE HERO -->
+
+    <section class="inner-hero projects-hero">
+
+        <div class="section-container">
+
+            <span class="section-eyebrow">
+
+                <i class="fa-solid fa-rocket"></i>
+
+                06 / Projects
+
+            </span>
+
+
+            <h1>
+                Things I've <span>Built</span>
+            </h1>
+
+
+            <p>
+                A collection of projects created while
+                exploring AI, Data Science, software
+                development and web technologies.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         PROJECT FILTER
+    ================================================== -->
+
+    <section class="projects-section">
+
+        <div class="section-container">
+
+
+            <div class="project-filter">
+
+                <button class="project-filter-btn active"
+                    data-filter="all">
+
+                    All
+                    <span>10</span>
+
+                </button>
+
+
+                <button class="project-filter-btn"
+                    data-filter="major">
+
+                    Major
+                    <span>6</span>
+
+                </button>
+
+
+                <button class="project-filter-btn"
+                    data-filter="mini">
+
+                    Mini
+                    <span>4</span>
+
+                </button>
+
+            </div>
+
+
+            <!-- =================================================
+                 PROJECT GRID
+            ================================================== -->
+
+            <div class="projects-grid">
+
+
+                <!-- =================================================
+                     MAJOR 01
+                ================================================== -->
+
+                <article class="project-card"
+                    data-category="major">
+
+                    <div class="project-image">
+
+                        <img src="../images/projects/voice-ai.jpg"
+                            alt="Voice Based OpenAI Application">
+
+                        <span class="project-number">
+                            01
+                        </span>
+
+                        <span class="project-type">
+                            Major
+                        </span>
+
+                        <div class="project-image-overlay">
+
+                            <button class="demo-button"
+                                data-video="voice-ai.mp4"
+                                data-title="Voice-Based OpenAI Application">
+
+                                <i class="fa-solid fa-play"></i>
+
+                                Watch Demo
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            AI / Voice
+                        </span>
+
+                        <h2>
+                            Voice-Based OpenAI Application
+                        </h2>
+
+                        <p>
+                            A voice-oriented AI application
+                            designed around OpenAI capabilities
+                            and conversational interaction.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span>Python</span>
+                            <span>OpenAI</span>
+                            <span>AI</span>
+
+                        </div>
+
+
+                        <div class="project-actions">
+
+                            <a href="#"
+                                class="project-link">
+
+                                <i class="fa-brands fa-github"></i>
+
+                                GitHub
+
+                            </a>
+
+                            <a href="#"
+                                class="project-link">
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                Live Demo
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     MAJOR 02
+                ================================================== -->
+
+                <article class="project-card"
+                    data-category="major">
+
+                    <div class="project-image">
+
+                        <img src="../images/projects/animal-protection.jpg"
+                            alt="AI Driven Crop Protection">
+
+                        <span class="project-number">
+                            02
+                        </span>
+
+                        <span class="project-type">
+                            Major
+                        </span>
+
+
+                        <div class="project-image-overlay">
+
+                            <button class="demo-button"
+                                data-video="crop-protection.mp4"
+                                data-title="AI-Driven Crop Protection & Wildlife Coexistence">
+
+                                <i class="fa-solid fa-play"></i>
+
+                                Watch Demo
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            AI / Agriculture
+                        </span>
+
+                        <h2>
+                            AI-Driven Crop Protection
+                            & Wildlife Coexistence
+                        </h2>
+
+                        <p>
+                            An AI-oriented project focused on
+                            crop protection and reducing
+                            human-wildlife conflict.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span>Python</span>
+                            <span>AI / ML</span>
+                            <span>Data Science</span>
+
+                        </div>
+
+
+                        <div class="project-actions">
+
+                            <a href="#"
+                                class="project-link">
+
+                                <i class="fa-brands fa-github"></i>
+                                GitHub
+
+                            </a>
+
+                            <a href="#"
+                                class="project-link">
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                Live Demo
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     MAJOR 03
+                ================================================== -->
+
+                <article class="project-card"
+                    data-category="major">
+
+                    <div class="project-image">
+
+                        <img src="../images/projects/line-follower.jpg"
+                            alt="Fastest Line Follower Robot">
+
+                        <span class="project-number">
+                            03
+                        </span>
+
+                        <span class="project-type">
+                            Major
+                        </span>
+
+
+                        <div class="project-image-overlay">
+
+                            <button class="demo-button"
+                                data-video="line-follower.mp4"
+                                data-title="Fastest Line Follower Robot">
+
+                                <i class="fa-solid fa-play"></i>
+
+                                Watch Demo
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            Robotics
+                        </span>
+
+                        <h2>
+                            Fastest Line Follower Robot
+                        </h2>
+
+                        <p>
+                            A robotics project involving the
+                            development of a high-speed
+                            line-following robot.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span>Robotics</span>
+                            <span>Sensors</span>
+                            <span>Control</span>
+
+                        </div>
+
+
+                        <div class="project-actions">
+
+                            <a href="#"
+                                class="project-link">
+
+                                <i class="fa-brands fa-github"></i>
+                                GitHub
+
+                            </a>
+
+                            <a href="#"
+                                class="project-link">
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                Live Demo
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     MAJOR 04
+                ================================================== -->
+
+                <article class="project-card"
+                    data-category="major">
+
+                    <div class="project-image">
+
+                        <img src="../images/projects/weather.jpg"
+                            alt="Real Time Weather Website">
+
+                        <span class="project-number">
+                            04
+                        </span>
+
+                        <span class="project-type">
+                            Major
+                        </span>
+
+
+                        <div class="project-image-overlay">
+
+                            <button class="demo-button"
+                                data-video="weather.mp4"
+                                data-title="Real-Time Weather Website">
+
+                                <i class="fa-solid fa-play"></i>
+
+                                Watch Demo
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            Web Application
+                        </span>
+
+                        <h2>
+                            Real-Time Weather Website
+                        </h2>
+
+                        <p>
+                            A responsive weather application
+                            designed to display real-time
+                            weather information for selected
+                            locations.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>API</span>
+
+                        </div>
+
+
+                        <div class="project-actions">
+
+                            <a href="#"
+                                class="project-link">
+
+                                <i class="fa-brands fa-github"></i>
+                                GitHub
+
+                            </a>
+
+                            <a href="#"
+                                class="project-link">
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                Live Demo
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     MAJOR 05
+                ================================================== -->
+
+                <article class="project-card"
+                    data-category="major">
+
+                    <div class="project-image">
+
+                        <img src="../images/projects/logistics.jpg"
+                            alt="Logistics Website">
+
+                        <span class="project-number">
+                            05
+                        </span>
+
+                        <span class="project-type">
+                            Major
+                        </span>
+
+
+                        <div class="project-image-overlay">
+
+                            <button class="demo-button"
+                                data-video="logistics.mp4"
+                                data-title="Logistics Website">
+
+                                <i class="fa-solid fa-play"></i>
+
+                                Watch Demo
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            Web Development
+                        </span>
+
+                        <h2>
+                            Logistics Website
+                        </h2>
+
+                        <p>
+                            A responsive logistics-oriented
+                            website with a modern interface
+                            for presenting services and
+                            business information.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+
+                        <div class="project-actions">
+
+                            <a href="https://github.com/mogan023/vrs"
+                                class="project-link">
+
+                                <i class="fa-brands fa-github"></i>
+                                GitHub
+
+                            </a>
+
+                            <a href="https://mogan023.github.io/vrs/"
+                                class="project-link">
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                Live Demo
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     MAJOR 06
+                ================================================== -->
+
+                <article class="project-card"
+                    data-category="major">
+
+                    <div class="project-image">
+
+                        <img src="../images/projects/film-booking.jpg"
+                            alt="Film Booking Website">
+
+                        <span class="project-number">
+                            06
+                        </span>
+
+                        <span class="project-type">
+                            Major
+                        </span>
+
+
+                        <div class="project-image-overlay">
+
+                            <button class="demo-button"
+                                data-video="film-booking.mp4"
+                                data-title="Film Booking Website">
+
+                                <i class="fa-solid fa-play"></i>
+
+                                Watch Demo
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            Web Development
+                        </span>
+
+                        <h2>
+                            Film Booking Website
+                        </h2>
+
+                        <p>
+                            A movie-focused web interface
+                            designed around browsing and
+                            booking experiences.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+
+                        <div class="project-actions">
+
+                            <a href="#"
+                                class="project-link">
+
+                                <i class="fa-brands fa-github"></i>
+                                GitHub
+
+                            </a>
+
+                            <a href="#"
+                                class="project-link">
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                Live Demo
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     MINI 07
+                ================================================== -->
+
+                <article class="project-card mini-project"
+                    data-category="mini">
+
+                    <div class="project-image">
+
+                        <img src="../images/projects/smart-calculator.jpg"
+                            alt="Smart Calculator">
+
+                        <span class="project-number">
+                            07
+                        </span>
+
+                        <span class="project-type">
+                            Mini
+                        </span>
+
+
+                        <div class="project-image-overlay">
+
+                            <button class="demo-button"
+                                data-video="smart-calculator.mp4"
+                                data-title="Smart Calculator">
+
+                                <i class="fa-solid fa-play"></i>
+
+                                Watch Demo
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            JavaScript
+                        </span>
+
+                        <h2>
+                            Smart Calculator
+                        </h2>
+
+                        <p>
+                            A calculator project with an
+                            additional conversion-oriented
+                            experience.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+
+                        <div class="project-actions">
+
+                            <a href="https://github.com/mogan023/Calculator"
+                                class="project-link">
+
+                                <i class="fa-brands fa-github"></i>
+                                GitHub
+
+                            </a>
+
+                            <a href="https://mogan023.github.io/Calculator/"
+                                class="project-link">
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                Live Demo
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     MINI 08
+                ================================================== -->
+
+                <article class="project-card mini-project"
+                    data-category="mini">
+
+                    <div class="project-image">
+
+                        <img src="../images/projects/keep-notes.jpg"
+                            alt="Keep Notes">
+
+                        <span class="project-number">
+                            08
+                        </span>
+
+                        <span class="project-type">
+                            Mini
+                        </span>
+
+
+                        <div class="project-image-overlay">
+
+                            <button class="demo-button"
+                                data-video="keep-notes.mp4"
+                                data-title="Keep Notes">
+
+                                <i class="fa-solid fa-play"></i>
+
+                                Watch Demo
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            Productivity
+                        </span>
+
+                        <h2>
+                            Keep Notes
+                        </h2>
+
+                        <p>
+                            A notes application inspired by
+                            the simplicity and usability of
+                            modern note-taking tools.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+
+                        <div class="project-actions">
+
+                            <a href="https://github.com/mogan023/Keep-Notes"
+                                class="project-link">
+
+                                <i class="fa-brands fa-github"></i>
+                                GitHub
+
+                            </a>
+
+                            <a href="https://mogan023.github.io/Task-Track/"
+                                class="project-link">
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                Live Demo
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     MINI 09
+                ================================================== -->
+
+                <article class="project-card mini-project"
+                    data-category="mini">
+
+                    <div class="project-image">
+
+                        <img src="../images/projects/task-management.jpg"
+                            alt="Task Management">
+
+                        <span class="project-number">
+                            09
+                        </span>
+
+                        <span class="project-type">
+                            Mini
+                        </span>
+
+
+                        <div class="project-image-overlay">
+
+                            <button class="demo-button"
+                                data-video="task-management.mp4"
+                                data-title="Task Management">
+
+                                <i class="fa-solid fa-play"></i>
+
+                                Watch Demo
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            Productivity
+                        </span>
+
+                        <h2>
+                            Task Management
+                        </h2>
+
+                        <p>
+                            A task management interface
+                            designed to organise tasks and
+                            improve everyday productivity.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+
+                        <div class="project-actions">
+
+                            <a href="#"
+                                class="project-link">
+
+                                <i class="fa-brands fa-github"></i>
+                                GitHub
+
+                            </a>
+
+                            <a href="#"
+                                class="project-link">
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                Live Demo
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     MINI 10
+                ================================================== -->
+
+                <article class="project-card mini-project"
+                    data-category="mini">
+
+                    <div class="project-image">
+
+                        <img src="../images/projects/opencv-cartoon.jpg"
+                            alt="Cartooning an Image Using OpenCV">
+
+                        <span class="project-number">
+                            10
+                        </span>
+
+                        <span class="project-type">
+                            Mini
+                        </span>
+
+
+                        <div class="project-image-overlay">
+
+                            <button class="demo-button"
+                                data-video="opencv-cartoon.mp4"
+                                data-title="Cartooning an Image Using OpenCV">
+
+                                <i class="fa-solid fa-play"></i>
+
+                                Watch Demo
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            Computer Vision
+                        </span>
+
+                        <h2>
+                            Cartooning an Image Using OpenCV
+                        </h2>
+
+                        <p>
+                            An image-processing project that
+                            explores cartoon-style transformation
+                            using OpenCV.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>Computer Vision</span>
+
+                        </div>
+
+
+                        <div class="project-actions">
+
+                            <a href="#"
+                                class="project-link">
+
+                                <i class="fa-brands fa-github"></i>
+                                GitHub
+
+                            </a>
+
+                            <a href="#"
+                                class="project-link">
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                Live Demo
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<!-- =====================================================
+     VIDEO MODAL
+===================================================== -->
+
+<div class="video-modal"
+    id="videoModal"
+    aria-hidden="true">
+
+    <div class="video-modal-backdrop"
+        id="videoModalBackdrop"></div>
+
+
+    <div class="video-modal-container">
+
+
+        <div class="video-modal-header">
+
+            <div>
+
+                <span>
+                    Project Demo
+                </span>
+
+                <h2 id="videoModalTitle">
+                    Project Demo
+                </h2>
+
+            </div>
+
+
+            <button class="video-modal-close"
+                id="videoModalClose"
+                aria-label="Close video">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+        <div class="video-player">
+
+            <video id="projectVideo"
+                controls
+                playsinline>
+
+                <source src=""
+                    type="video/mp4">
+
+                Your browser does not support
+                video playback.
+
+            </video>
+
+
+            <!-- COPYRIGHT WATERMARK -->
+
+            <div class="video-watermark">
+
+                © Moganavel Venkatachalam
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+    <div class="footer-inner">
+
+        <div class="footer-brand">
+
+            <span class="brand-mark">
+                M
+            </span>
+
+            <div>
+
+                <strong>
+                    Moganavel Venkatachalam
+                </strong>
+
+                <span>
+                    AI & Data Science Developer
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-copy">
+
+            <p>
+                ©
+                <span id="copyrightYear"></span>
+                Moganavel Venkatachalam
+            </p>
+
+            <span>
+                All Rights Reserved.
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="../js/script.js"></script>
+<script src="../js/projects-api.js"></script>
+
+
+</body>
+
+</html>

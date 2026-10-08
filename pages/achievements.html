@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Achievements | Moganavel Venkatachalam</title>
+
+    <meta name="description"
+        content="Achievements and participation highlights of Moganavel Venkatachalam.">
+
+    <link rel="stylesheet"
+        href="../css/style.css">
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="../index.html"
+            class="brand">
+
+            <span class="brand-mark">
+                M
+            </span>
+
+            <span class="brand-name">
+                MOGANAVEL
+            </span>
+
+        </a>
+
+
+        <div class="header-controls">
+
+
+            <!-- LANGUAGE -->
+
+            <div class="control-wrapper">
+
+                <button class="header-control"
+                    id="languageButton"
+                    aria-label="Select language">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                    <span id="currentLanguage">
+                        EN
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down control-arrow"></i>
+
+                </button>
+
+
+                <div class="language-dropdown"
+                    id="languageDropdown">
+
+                    <button data-language="en">
+                        🇬🇧 English
+                    </button>
+
+                    <button data-language="ta">
+                        🇮🇳 தமிழ்
+                    </button>
+
+                    <button data-language="hi">
+                        🇮🇳 हिन्दी
+                    </button>
+
+                    <button data-language="ru">
+                        🇷🇺 Русский
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- THEME -->
+
+            <button class="header-control theme-button"
+                id="themeButton"
+                aria-label="Change theme">
+
+                <i class="fa-solid fa-circle-half-stroke"
+                    id="themeIcon"></i>
+
+            </button>
+
+
+            <!-- MENU -->
+
+            <button class="menu-button"
+                id="menuButton"
+                aria-label="Open navigation"
+                aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     SIDE MENU
+===================================================== -->
+
+<div class="menu-overlay"
+    id="menuOverlay"></div>
+
+
+<aside class="side-menu"
+    id="sideMenu">
+
+
+    <div class="side-menu-header">
+
+        <div>
+
+            <span class="menu-label"
+                data-i18n="navigation">
+
+                Navigation
+
+            </span>
+
+
+            <h2 data-i18n="explore">
+                Explore
+            </h2>
+
+        </div>
+
+
+        <button class="menu-close"
+            id="menuClose">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+
+    <nav class="main-navigation">
+
+
+        <a href="../index.html"
+            class="nav-link">
+
+            <span class="nav-number">
+                01
+            </span>
+
+            <span data-i18n="home">
+                Home
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="about.html"
+            class="nav-link">
+
+            <span class="nav-number">
+                02
+            </span>
+
+            <span data-i18n="about">
+                About Me
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="education.html"
+            class="nav-link">
+
+            <span class="nav-number">
+                03
+            </span>
+
+            <span data-i18n="education">
+                Education
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="experience.html"
+            class="nav-link">
+
+            <span class="nav-number">
+                04
+            </span>
+
+            <span data-i18n="experience">
+                Experience
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="skills.html"
+            class="nav-link">
+
+            <span class="nav-number">
+                05
+            </span>
+
+            <span data-i18n="skills">
+                Skills
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="projects.html"
+            class="nav-link">
+
+            <span class="nav-number">
+                06
+            </span>
+
+            <span data-i18n="projects">
+                Projects
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="achievements.html"
+            class="nav-link active">
+
+            <span class="nav-number">
+                07
+            </span>
+
+            <span data-i18n="achievements">
+                Achievements
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="certificates.html"
+            class="nav-link">
+
+            <span class="nav-number">
+                08
+            </span>
+
+            <span data-i18n="certificates">
+                Certificates
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="interactive.html"
+            class="nav-link">
+
+            <span class="nav-number">
+                09
+            </span>
+
+            <span data-i18n="interactive">
+                Interactive Zone
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="contact.html"
+            class="nav-link">
+
+            <span class="nav-number">
+                10
+            </span>
+
+            <span data-i18n="contact">
+                Contact
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+    </nav>
+
+
+    <div class="side-menu-footer">
+
+        <span data-i18n="menuFooter">
+            Let's build something meaningful.
+        </span>
+
+
+        <div class="menu-socials">
+
+            <a href="#">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</aside>
+
+
+<!-- =====================================================
+     ACHIEVEMENTS
+===================================================== -->
+
+<main class="inner-page">
+
+
+    <!-- HERO -->
+
+    <section class="inner-hero">
+
+        <div class="section-container">
+
+            <span class="section-eyebrow">
+
+                <i class="fa-solid fa-trophy"></i>
+
+                07 / Achievements
+
+            </span>
+
+
+            <h1>
+                Milestones &
+                <span>Achievements</span>
+            </h1>
+
+
+            <p>
+                Experiences that challenged me to build,
+                compete, collaborate and keep improving.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         FEATURED ACHIEVEMENT
+    ================================================== -->
+
+    <section class="achievement-feature-section">
+
+        <div class="section-container">
+
+
+            <article class="achievement-feature-card">
+
+
+                <!-- LEFT -->
+
+                <div class="achievement-feature-left">
+
+
+                    <div class="achievement-badge">
+
+                        <i class="fa-solid fa-trophy"></i>
+
+                    </div>
+
+
+                    <span class="achievement-label">
+                        Featured Achievement
+                    </span>
+
+
+                    <h2>
+                        Technixian Robotics
+                        Competition
+                    </h2>
+
+
+                    <p>
+                        Participated in the Technixian
+                        Robotics Competition and progressed
+                        to the penultimate round with our
+                        follower robot.
+                    </p>
+
+
+                    <div class="achievement-highlight-list">
+
+
+                        <div class="achievement-highlight">
+
+                            <span>
+                                <i class="fa-solid fa-robot"></i>
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Follower Robot
+                                </strong>
+
+                                <small>
+                                    Robotics project
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="achievement-highlight">
+
+                            <span>
+                                <i class="fa-solid fa-flag-checkered"></i>
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Penultimate Round
+                                </strong>
+
+                                <small>
+                                    Advanced through the competition
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="achievement-highlight">
+
+                            <span>
+                                <i class="fa-solid fa-people-group"></i>
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Team Participation
+                                </strong>
+
+                                <small>
+                                    Collaborative robotics experience
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT -->
+
+                <div class="achievement-feature-right">
+
+
+                    <div class="robotics-visual">
+
+
+                        <div class="robot-grid"></div>
+
+
+                        <div class="robot-glow"></div>
+
+
+                        <div class="robot-body">
+
+                            <div class="robot-sensor sensor-one"></div>
+
+                            <div class="robot-sensor sensor-two"></div>
+
+                            <div class="robot-sensor sensor-three"></div>
+
+                            <div class="robot-core">
+                                <i class="fa-solid fa-microchip"></i>
+                            </div>
+
+                            <div class="robot-wheel wheel-left"></div>
+
+                            <div class="robot-wheel wheel-right"></div>
+
+                        </div>
+
+
+                        <span class="robot-label">
+                            FOLLOWER ROBOT
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         ACHIEVEMENT JOURNEY
+    ================================================== -->
+
+    <section class="achievement-journey-section">
+
+        <div class="section-container">
+
+
+            <div class="section-heading">
+
+                <span class="section-eyebrow">
+
+                    <i class="fa-solid fa-route"></i>
+
+                    Competition Journey
+
+                </span>
+
+
+                <h2>
+                    The road to the
+                    <span>final.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="achievement-steps">
+
+
+                <!-- STEP 01 -->
+
+                <div class="achievement-step">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <div class="step-line"></div>
+
+                    <div class="step-content">
+
+                        <span>
+                            Starting Point
+                        </span>
+
+                        <h3>
+                            Built the Robot
+                        </h3>
+
+                        <p>
+                            Worked on the follower robot
+                            as the team's robotics project.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STEP 02 -->
+
+                <div class="achievement-step">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <div class="step-line"></div>
+
+                    <div class="step-content">
+
+                        <span>
+                            Competition
+                        </span>
+
+                        <h3>
+                            Cleared Multiple Rounds
+                        </h3>
+
+                        <p>
+                            The team progressed through
+                            the competition and reached
+                            the penultimate round.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STEP 03 -->
+
+                <div class="achievement-step">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <div class="step-line"></div>
+
+                    <div class="step-content">
+
+                        <span>
+                            Milestone
+                        </span>
+
+                        <h3>
+                            Penultimate Round
+                        </h3>
+
+                        <p>
+                            Reached the round immediately
+                            before the final stage of
+                            the competition.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STEP 04 -->
+
+                <div class="achievement-step final-step">
+
+                    <div class="step-number">
+                        ★
+                    </div>
+
+                    <div class="step-content">
+
+                        <span>
+                            Takeaway
+                        </span>
+
+                        <h3>
+                            Build. Test. Improve.
+                        </h3>
+
+                        <p>
+                            The experience strengthened
+                            practical problem solving,
+                            teamwork and robotics exposure.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         CERTIFICATE ACHIEVEMENT
+    ================================================== -->
+
+    <section class="achievement-certificate-section">
+
+        <div class="section-container">
+
+
+            <div class="achievement-certificate-card">
+
+
+                <div class="certificate-achievement-info">
+
+
+                    <span class="section-eyebrow">
+
+                        <i class="fa-solid fa-award"></i>
+
+                        Recognition
+
+                    </span>
+
+
+                    <h2>
+                        Technixian
+                        <span>Certificate</span>
+                    </h2>
+
+
+                    <p>
+                        The participation certificate from
+                        the robotics competition is preserved
+                        here as part of the achievement.
+                    </p>
+
+
+                    <button class="view-certificate-btn"
+                        id="achievementCertificateButton">
+
+                        <i class="fa-regular fa-image"></i>
+
+                        View Certificate
+
+                    </button>
+
+                </div>
+
+
+                <div class="certificate-preview-card">
+
+
+                    <div class="certificate-preview-image">
+
+                        <img
+                            src="../images/certificates/certificate-2.jpg"
+                            alt="Technixian Robotics Competition Certificate">
+
+                        <div class="certificate-preview-overlay">
+
+                            <i class="fa-solid fa-expand"></i>
+
+                            <span>
+                                Click to Preview
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="certificate-preview-caption">
+
+                        <span>
+                            Certificate
+                        </span>
+
+                        <strong>
+                            Technixian Robotics Competition
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         CLOSING
+    ================================================== -->
+
+    <section class="achievement-closing">
+
+        <div class="section-container">
+
+            <div class="achievement-closing-card">
+
+                <div class="closing-icon">
+
+                    <i class="fa-solid fa-medal"></i>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        More to come
+                    </span>
+
+                    <h2>
+                        Every experience becomes
+                        part of the journey.
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<!-- =====================================================
+     CERTIFICATE MODAL
+===================================================== -->
+
+<div class="certificate-modal"
+    id="certificateModal"
+    aria-hidden="true">
+
+
+    <div class="certificate-modal-backdrop"
+        id="certificateModalBackdrop"></div>
+
+
+    <div class="certificate-modal-container">
+
+
+        <div class="certificate-modal-header">
+
+            <div>
+
+                <span>
+                    Certificate Preview
+                </span>
+
+                <h2>
+                    Technixian Robotics Competition
+                </h2>
+
+            </div>
+
+
+            <button class="certificate-modal-close"
+                id="certificateModalClose">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+        <div class="certificate-modal-body">
+
+            <img
+                src="../images/certificates/technixian.jpg"
+                alt="Technixian Robotics Competition Certificate">
+
+        </div>
+
+
+        <div class="certificate-modal-footer">
+
+            <a
+                href="../certificates/technixian.pdf"
+                download
+                class="certificate-download">
+
+                <i class="fa-solid fa-download"></i>
+
+                Download PDF
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+    <div class="footer-inner">
+
+
+        <div class="footer-brand">
+
+            <span class="brand-mark">
+                M
+            </span>
+
+
+            <div>
+
+                <strong>
+                    Moganavel Venkatachalam
+                </strong>
+
+                <span>
+                    AI & Data Science Developer
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-copy">
+
+            <p>
+
+                ©
+                <span id="copyrightYear"></span>
+                Moganavel Venkatachalam
+
+            </p>
+
+
+            <span>
+                All Rights Reserved.
+            </span>
+
+        </div>
+
+
+    </div>
+
+</footer>
+
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>

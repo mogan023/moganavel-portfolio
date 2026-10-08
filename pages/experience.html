@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Experience | Moganavel Venkatachalam</title>
+
+    <meta name="description"
+        content="Professional experience of Moganavel Venkatachalam.">
+
+    <link rel="stylesheet"
+        href="../css/style.css">
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="../index.html"
+            class="brand">
+
+            <span class="brand-mark">
+                M
+            </span>
+
+            <span class="brand-name">
+                MOGANAVEL
+            </span>
+
+        </a>
+
+
+        <div class="header-controls">
+
+
+            <!-- LANGUAGE -->
+
+            <div class="control-wrapper">
+
+                <button class="header-control"
+                    id="languageButton"
+                    aria-label="Select language">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                    <span id="currentLanguage">
+                        EN
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down control-arrow"></i>
+
+                </button>
+
+
+                <div class="language-dropdown"
+                    id="languageDropdown">
+
+                    <button data-language="en">
+                        🇬🇧 English
+                    </button>
+
+                    <button data-language="ta">
+                        🇮🇳 தமிழ்
+                    </button>
+
+                    <button data-language="hi">
+                        🇮🇳 हिन्दी
+                    </button>
+
+                    <button data-language="ru">
+                        🇷🇺 Русский
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- THEME -->
+
+            <button class="header-control theme-button"
+                id="themeButton"
+                aria-label="Change theme">
+
+                <i class="fa-solid fa-circle-half-stroke"
+                    id="themeIcon"></i>
+
+            </button>
+
+
+            <!-- MENU -->
+
+            <button class="menu-button"
+                id="menuButton"
+                aria-label="Open navigation"
+                aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     SIDE MENU
+===================================================== -->
+
+<div class="menu-overlay"
+    id="menuOverlay"></div>
+
+
+<aside class="side-menu"
+    id="sideMenu">
+
+
+    <div class="side-menu-header">
+
+        <div>
+
+            <span class="menu-label"
+                data-i18n="navigation">
+                Navigation
+            </span>
+
+            <h2 data-i18n="explore">
+                Explore
+            </h2>
+
+        </div>
+
+
+        <button class="menu-close"
+            id="menuClose">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+
+    <nav class="main-navigation">
+
+        <a href="../index.html"
+            class="nav-link">
+
+            <span class="nav-number">01</span>
+
+            <span data-i18n="home">
+                Home
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="about.html"
+            class="nav-link">
+
+            <span class="nav-number">02</span>
+
+            <span data-i18n="about">
+                About Me
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="education.html"
+            class="nav-link">
+
+            <span class="nav-number">03</span>
+
+            <span data-i18n="education">
+                Education
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="experience.html"
+            class="nav-link active">
+
+            <span class="nav-number">04</span>
+
+            <span data-i18n="experience">
+                Experience
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="skills.html"
+            class="nav-link">
+
+            <span class="nav-number">05</span>
+
+            <span data-i18n="skills">
+                Skills
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="projects.html"
+            class="nav-link">
+
+            <span class="nav-number">06</span>
+
+            <span data-i18n="projects">
+                Projects
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="achievements.html"
+            class="nav-link">
+
+            <span class="nav-number">07</span>
+
+            <span data-i18n="achievements">
+                Achievements
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="certificates.html"
+            class="nav-link">
+
+            <span class="nav-number">08</span>
+
+            <span data-i18n="certificates">
+                Certificates
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="interactive.html"
+            class="nav-link">
+
+            <span class="nav-number">09</span>
+
+            <span data-i18n="interactive">
+                Interactive Zone
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+        <a href="contact.html"
+            class="nav-link">
+
+            <span class="nav-number">10</span>
+
+            <span data-i18n="contact">
+                Contact
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+    </nav>
+
+
+    <div class="side-menu-footer">
+
+        <span data-i18n="menuFooter">
+            Let's build something meaningful.
+        </span>
+
+
+        <div class="menu-socials">
+
+            <a href="#">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</aside>
+
+
+<!-- =====================================================
+     EXPERIENCE
+===================================================== -->
+
+<main class="inner-page">
+
+
+    <section class="inner-hero">
+
+        <div class="section-container">
+
+            <span class="section-eyebrow">
+
+                <i class="fa-solid fa-briefcase"></i>
+
+                04 / Experience
+
+            </span>
+
+
+            <h1>
+                My <span>Experience</span>
+            </h1>
+
+
+            <p>
+                Practical experience gained through
+                software development and hands-on work.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPERIENCE CARD -->
+
+    <section class="experience-section">
+
+        <div class="section-container">
+
+
+            <article class="experience-card">
+
+
+                <div class="experience-top">
+
+
+                    <div class="experience-company">
+
+                        <div class="experience-logo">
+                            I
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Inmakes Infotech Pvt. Ltd.
+                            </span>
+
+                            <h2>
+                                Java Full Stack
+                                Development Intern
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="experience-date">
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        <span>
+                            Aug 2023 — Nov 2023
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="experience-divider"></div>
+
+
+                <div class="experience-body">
+
+
+                    <div class="experience-overview">
+
+                        <span class="experience-label">
+                            Role
+                        </span>
+
+                        <h3>
+                            Java Full Stack
+                            Development
+                        </h3>
+
+                        <p>
+                            Contributed to Java Full Stack
+                            projects using Java and web
+                            technologies while gaining
+                            practical application development
+                            experience.
+                        </p>
+
+                    </div>
+
+
+                    <div class="experience-responsibilities">
+
+                        <span class="experience-label">
+                            What I Worked On
+                        </span>
+
+
+                        <div class="responsibility-list">
+
+
+                            <div class="responsibility">
+
+                                <span class="responsibility-icon">
+                                    <i class="fa-solid fa-code"></i>
+                                </span>
+
+                                <p>
+                                    Contributed to Java Full
+                                    Stack projects using Java
+                                    and web technologies.
+                                </p>
+
+                            </div>
+
+
+                            <div class="responsibility">
+
+                                <span class="responsibility-icon">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                </span>
+
+                                <p>
+                                    Assisted in application
+                                    development and timely
+                                    project delivery.
+                                </p>
+
+                            </div>
+
+
+                            <div class="responsibility">
+
+                                <span class="responsibility-icon">
+                                    <i class="fa-solid fa-brain"></i>
+                                </span>
+
+                                <p>
+                                    Developed problem-solving
+                                    skills while adapting to
+                                    technical requirements.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TECHNOLOGIES -->
+
+                <div class="experience-tech">
+
+                    <span>
+                        Technologies
+                    </span>
+
+                    <div>
+
+                        <span>Java</span>
+
+                        <span>HTML</span>
+
+                        <span>CSS</span>
+
+                        <span>JavaScript</span>
+
+                        <span>REST APIs</span>
+
+                    </div>
+
+                </div>
+
+
+            </article>
+
+
+            <!-- EXPERIENCE MINDSET -->
+
+            <div class="experience-bottom-grid">
+
+
+                <div class="experience-mini-card">
+
+                    <div class="experience-mini-icon">
+
+                        <i class="fa-solid fa-puzzle-piece"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Developed
+                        </span>
+
+                        <strong>
+                            Problem Solving
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="experience-mini-card">
+
+                    <div class="experience-mini-icon">
+
+                        <i class="fa-solid fa-people-group"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Experienced
+                        </span>
+
+                        <strong>
+                            Team Collaboration
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="experience-mini-card">
+
+                    <div class="experience-mini-icon">
+
+                        <i class="fa-solid fa-rocket"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Focused On
+                        </span>
+
+                        <strong>
+                            Continuous Learning
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+    <div class="footer-inner">
+
+        <div class="footer-brand">
+
+            <span class="brand-mark">
+                M
+            </span>
+
+            <div>
+
+                <strong>
+                    Moganavel Venkatachalam
+                </strong>
+
+                <span>
+                    AI & Data Science Developer
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-copy">
+
+            <p>
+                ©
+                <span id="copyrightYear"></span>
+                Moganavel Venkatachalam
+            </p>
+
+            <span>
+                All Rights Reserved.
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

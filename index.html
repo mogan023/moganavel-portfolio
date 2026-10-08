@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moganavel V</title>
+
+    <meta name="description"
+          content="Portfolio of Moganavel.">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     OPENING GREETING
+===================================================== -->
+
+<div class="intro-screen" id="introScreen">
+
+    <div class="intro-content">
+
+        <div class="intro-symbol">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <p class="intro-small" data-i18n="introSmall">
+            Welcome to my portfolio
+        </p>
+
+        <h1 data-i18n="introGreeting">
+            Hello, I'm Moganavel
+        </h1>
+
+        <div class="intro-line"></div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     FIXED HEADER
+===================================================== -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <!-- Logo -->
+        <a href="index.html" class="brand">
+            <span class="brand-mark">M</span>
+            <span class="brand-name">MOGANAVEL</span>
+        </a>
+
+
+        <!-- TOP RIGHT CONTROLS -->
+        <div class="header-controls">
+
+            <!-- LANGUAGE -->
+            <div class="control-wrapper">
+
+                <button class="header-control"
+                        id="languageButton"
+                        aria-label="Select language"
+                        title="Language">
+
+                    <i class="fa-solid fa-globe"></i>
+                    <span id="currentLanguage">EN</span>
+                    <i class="fa-solid fa-chevron-down control-arrow"></i>
+
+                </button>
+
+                <div class="language-dropdown" id="languageDropdown">
+
+                    <button data-language="en">
+                        🇬🇧 English
+                    </button>
+
+                    <button data-language="ta">
+                        🇮🇳 தமிழ்
+                    </button>
+
+                    <button data-language="hi">
+                        🇮🇳 हिन्दी
+                    </button>
+
+                    <button data-language="ru">
+                        🇷🇺 Русский
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- THEME -->
+            <button class="header-control theme-button"
+                    id="themeButton"
+                    aria-label="Change theme"
+                    title="Change theme">
+
+                <i class="fa-solid fa-circle-half-stroke"
+                   id="themeIcon"></i>
+
+            </button>
+
+
+            <!-- MENU -->
+            <button class="menu-button"
+                    id="menuButton"
+                    aria-label="Open navigation"
+                    aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     RIGHT SIDE NAVIGATION
+===================================================== -->
+
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<aside class="side-menu" id="sideMenu">
+
+    <div class="side-menu-header">
+
+        <div>
+            <span class="menu-label" data-i18n="navigation">
+                Navigation
+            </span>
+
+            <h2 data-i18n="explore">
+                Explore
+            </h2>
+        </div>
+
+        <button class="menu-close"
+                id="menuClose"
+                aria-label="Close menu">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+
+    <nav class="main-navigation">
+
+        <a href="index.html" class="nav-link active">
+            <span class="nav-number">01</span>
+            <span data-i18n="home">Home</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="pages/about.html" class="nav-link">
+            <span class="nav-number">02</span>
+            <span data-i18n="about">About Me</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="pages/education.html" class="nav-link">
+            <span class="nav-number">03</span>
+            <span data-i18n="education">Education</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="pages/experience.html" class="nav-link">
+            <span class="nav-number">04</span>
+            <span data-i18n="experience">Experience</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="pages/skills.html" class="nav-link">
+            <span class="nav-number">05</span>
+            <span data-i18n="skills">Skills</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="pages/projects.html" class="nav-link">
+            <span class="nav-number">06</span>
+            <span data-i18n="projects">Projects</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="pages/achievements.html" class="nav-link">
+            <span class="nav-number">07</span>
+            <span data-i18n="achievements">Achievements</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="pages/certificates.html" class="nav-link">
+            <span class="nav-number">08</span>
+            <span data-i18n="certificates">Certificates</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="pages/interactive.html" class="nav-link">
+            <span class="nav-number">09</span>
+            <span data-i18n="interactive">Interactive Zone</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="pages/contact.html" class="nav-link">
+            <span class="nav-number">10</span>
+            <span data-i18n="contact">Contact</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </nav>
+
+
+    <div class="side-menu-footer">
+
+        <span data-i18n="menuFooter">
+            Let's build something meaningful.
+        </span>
+
+        <div class="menu-socials">
+
+            <a href="#" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="#" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="#" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</aside>
+
+
+<!-- =====================================================
+     MAIN LANDING PAGE
+===================================================== -->
+
+<main>
+
+    <!-- HERO -->
+    <section class="hero-section">
+
+        <div class="hero-background-shape shape-one"></div>
+        <div class="hero-background-shape shape-two"></div>
+
+        <div class="hero-container">
+
+
+            <!-- LEFT SIDE -->
+            <div class="hero-content">
+
+                <div class="hero-intro">
+
+                    <span class="status-dot"></span>
+
+                    <span data-i18n="available">
+                        Exploring • Learning • Building
+                    </span>
+
+                </div>
+
+
+                <h1 class="hero-title">
+
+                    <span data-i18n="hello">
+                        Hello, I'm
+                    </span>
+
+                    <strong>
+                        Moganavel
+                    </strong>
+
+                </h1>
+
+
+                <h2 class="hero-role">
+
+                    <span data-i18n="role">
+                        AI & Data Science Developer
+                    </span>
+
+                </h2>
+
+
+                <p class="hero-description"
+                   data-i18n="heroDescription">
+
+                    Turning ideas into intelligent, practical and
+                    meaningful digital experiences.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="pages/projects.html"
+                       class="primary-button">
+
+                        <span data-i18n="exploreWork">
+                            Explore My Work
+                        </span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+
+                    <a href="pages/contact.html"
+                       class="secondary-button">
+
+                        <span data-i18n="letsConnect">
+                            Let's Connect
+                        </span>
+
+                        <i class="fa-regular fa-paper-plane"></i>
+
+                    </a>
+
+                </div>
+
+
+                <!-- QUICK STATS -->
+                <div class="quick-stats">
+
+                    <div class="stat-item">
+
+                        <strong>10+</strong>
+
+                        <span data-i18n="projectsCount">
+                            Projects
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-item">
+
+                        <strong>5</strong>
+
+                        <span data-i18n="certificatesCount">
+                            Certificates
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-item">
+
+                        <strong>01</strong>
+
+                        <span data-i18n="robotics">
+                            Robotics Achievement
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROFILE IMAGE -->
+            <div class="hero-visual">
+
+                <div class="profile-glow"></div>
+
+                <div class="profile-frame" id="profileFrame">
+
+                    <div class="profile-image-container">
+
+                        <img src="images/profile.jpg"
+                             alt="Moganavel Venkatachalam"
+                             class="profile-image">
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile-floating-tag tag-one">
+                    AI
+                </div>
+
+                <div class="profile-floating-tag tag-two">
+                    DATA
+                </div>
+
+                <div class="profile-floating-tag tag-three">
+                    WEB
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SCROLL INDICATOR -->
+        <div class="scroll-indicator">
+
+            <span data-i18n="scroll">
+                Scroll to explore
+            </span>
+
+            <i class="fa-solid fa-arrow-down"></i>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         LIVE TIME
+    ================================================= -->
+
+    <section class="live-section">
+
+        <div class="section-container">
+
+            <div class="live-card">
+
+                <div class="live-icon">
+                    <i class="fa-regular fa-clock"></i>
+                </div>
+
+                <div>
+
+                    <span class="live-label"
+                          data-i18n="localTime">
+                        Local Time
+                    </span>
+
+                    <div class="live-time"
+                         id="liveTime">
+                        --:--:--
+                    </div>
+
+                    <div class="live-date"
+                         id="liveDate">
+                        Loading...
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         CURRENTLY BUILDING
+    ================================================= -->
+
+    <section class="building-section">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <span class="section-eyebrow">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span data-i18n="rightNow">
+                        Right Now
+                    </span>
+                </span>
+
+                <h2 data-i18n="currentlyBuilding">
+                    Currently Building
+                </h2>
+
+            </div>
+
+
+            <div class="building-card">
+
+                <div class="building-main">
+
+                    <div class="building-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+
+                    <div>
+
+                        <span class="building-label"
+                              data-i18n="currently">
+                            Currently
+                        </span>
+
+                        <h3 id="buildingText">
+                            Web Development
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div class="building-dots">
+
+                    <span class="building-dot active"></span>
+                    <span class="building-dot"></span>
+                    <span class="building-dot"></span>
+                    <span class="building-dot"></span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         DEVELOPER TERMINAL
+    ================================================= -->
+
+    <section class="terminal-section">
+
+        <div class="section-container">
+
+            <div class="terminal-window">
+
+                <div class="terminal-top">
+
+                    <div class="terminal-dots">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                    <span>
+                        developer@portfolio:~
+                    </span>
+
+                </div>
+
+
+                <div class="terminal-body">
+
+                    <p>
+                        <span class="terminal-symbol">$</span>
+                        who am i
+                    </p>
+
+                    <p class="terminal-output">
+                        Moganavel Venkatachalam
+                    </p>
+
+
+                    <p>
+                        <span class="terminal-symbol">$</span>
+                        status
+                    </p>
+
+                    <p class="terminal-output">
+
+                        <span>✓ Learning</span>
+                        <span>✓ Building</span>
+                        <span>✓ Exploring AI</span>
+                        <span>✓ Creating</span>
+
+                    </p>
+
+
+                    <p>
+                        <span class="terminal-symbol">$</span>
+                        echo "Thanks for visiting!"
+                    </p>
+
+                    <p class="terminal-output terminal-final">
+                        Thanks for exploring my portfolio! ✨
+                    </p>
+
+                    <span class="terminal-cursor"></span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+    <div class="footer-inner">
+
+        <div class="footer-brand">
+
+            <span class="brand-mark">M</span>
+
+            <div>
+
+                <strong>
+                    Moganavel Venkatachalam
+                </strong>
+
+                <span data-i18n="footerRole">
+                    AI & Data Science Developer
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-copy">
+
+            <p>
+                © <span id="copyrightYear"></span>
+                Moganavel Venkatachalam
+            </p>
+
+            <span data-i18n="allRights">
+                All Rights Reserved.
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+<!-- =====================================================
+     PORTFOLIO ASSISTANT
+====================================================== -->
+
+<button
+        type="button"
+        class="portfolio-assistant-trigger"
+        id="assistantTrigger"
+        aria-label="Open portfolio assistant"
+>
+   <span class="google-assistant-logo" aria-hidden="true">
+    <span class="assistant-dot blue"></span>
+    <span class="assistant-dot red"></span>
+    <span class="assistant-dot yellow"></span>
+    <span class="assistant-dot green"></span>
+</span>
+</button>
+
+<div
+        class="portfolio-assistant"
+        id="portfolioAssistant"
+        aria-hidden="true"
+>
+    <div class="assistant-window">
+
+        <!-- ASSISTANT HEADER -->
+        <div class="assistant-header">
+
+            <div class="assistant-title">
+
+                <div class="assistant-avatar">
+                    <i class="fa-solid fa-sparkles"></i>
+                </div>
+
+                <div>
+                    <strong>Portfolio Assistant</strong>
+                    <span>Ask me about this portfolio</span>
+                </div>
+
+            </div>
+
+            <button
+                    type="button"
+                    class="assistant-close"
+                    id="assistantClose"
+                    aria-label="Close assistant"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+
+        <!-- ASSISTANT MESSAGES -->
+        <div
+                class="assistant-messages"
+                id="assistantMessages"
+                aria-live="polite"
+        >
+
+            <div class="assistant-message assistant-bot">
+
+                <div class="assistant-message-avatar">
+                    <i class="fa-solid fa-sparkles"></i>
+                </div>
+
+                <div class="assistant-message-content">
+                    Hi! 👋 I'm the portfolio assistant.
+
+                    Ask me about projects, skills,
+                    education, experience, or contact details.
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SUGGESTED QUESTIONS -->
+        <div
+                class="assistant-suggestions"
+                id="assistantSuggestions"
+        >
+
+            <button
+                    type="button"
+                    data-question="What projects do you have?"
+            >
+                Projects
+            </button>
+
+            <button
+                    type="button"
+                    data-question="What are your skills?"
+            >
+                Skills
+            </button>
+
+            <button
+                    type="button"
+                    data-question="Tell me about your education"
+            >
+                Education
+            </button>
+
+            <button
+                    type="button"
+                    data-question="Tell me about your experience"
+            >
+                Experience
+            </button>
+
+        </div>
+
+
+        <!-- ASSISTANT INPUT -->
+        <form
+                class="assistant-input-area"
+                id="assistantForm"
+        >
+
+            <input
+                    type="text"
+                    id="assistantInput"
+                    placeholder="Ask something..."
+                    autocomplete="off"
+                    aria-label="Ask the portfolio assistant"
+            >
+
+            <button
+                    type="submit"
+                    id="assistantSend"
+                    aria-label="Send message"
+            >
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+        </form>
+
+    </div>
+</div>
+
+
+<!-- EXISTING JAVASCRIPT -->
+<script src="js/script.js"></script>
+<script src="js/assistant.js"></script>
+
+</body>
+</html>

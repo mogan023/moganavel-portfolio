@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Me | Moganavel Venkatachalam</title>
+
+    <meta name="description"
+        content="Learn more about Moganavel Venkatachalam, an AI and Data Science developer.">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         FIXED HEADER
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <div class="header-inner">
+
+            <a href="../index.html" class="brand">
+
+                <span class="brand-mark">M</span>
+
+                <span class="brand-name">
+                    MOGANAVEL
+                </span>
+
+            </a>
+
+
+            <div class="header-controls">
+
+                <!-- LANGUAGE -->
+
+                <div class="control-wrapper">
+
+                    <button class="header-control"
+                        id="languageButton"
+                        aria-label="Select language">
+
+                        <i class="fa-solid fa-globe"></i>
+
+                        <span id="currentLanguage">
+                            EN
+                        </span>
+
+                        <i class="fa-solid fa-chevron-down control-arrow"></i>
+
+                    </button>
+
+
+                    <div class="language-dropdown"
+                        id="languageDropdown">
+
+                        <button data-language="en">
+                            🇬🇧 English
+                        </button>
+
+                        <button data-language="ta">
+                            🇮🇳 தமிழ்
+                        </button>
+
+                        <button data-language="hi">
+                            🇮🇳 हिन्दी
+                        </button>
+
+                        <button data-language="ru">
+                            🇷🇺 Русский
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- THEME -->
+
+                <button class="header-control theme-button"
+                    id="themeButton"
+                    aria-label="Change theme">
+
+                    <i class="fa-solid fa-circle-half-stroke"
+                        id="themeIcon"></i>
+
+                </button>
+
+
+                <!-- MENU -->
+
+                <button class="menu-button"
+                    id="menuButton"
+                    aria-label="Open navigation"
+                    aria-expanded="false">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MENU
+    ====================================================== -->
+
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+
+    <aside class="side-menu" id="sideMenu">
+
+        <div class="side-menu-header">
+
+            <div>
+
+                <span class="menu-label"
+                    data-i18n="navigation">
+                    Navigation
+                </span>
+
+                <h2 data-i18n="explore">
+                    Explore
+                </h2>
+
+            </div>
+
+
+            <button class="menu-close"
+                id="menuClose"
+                aria-label="Close menu">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+        <nav class="main-navigation">
+
+            <a href="../index.html" class="nav-link">
+
+                <span class="nav-number">
+                    01
+                </span>
+
+                <span data-i18n="home">
+                    Home
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <a href="about.html"
+                class="nav-link active">
+
+                <span class="nav-number">
+                    02
+                </span>
+
+                <span data-i18n="about">
+                    About Me
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <a href="education.html"
+                class="nav-link">
+
+                <span class="nav-number">
+                    03
+                </span>
+
+                <span data-i18n="education">
+                    Education
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <a href="experience.html"
+                class="nav-link">
+
+                <span class="nav-number">
+                    04
+                </span>
+
+                <span data-i18n="experience">
+                    Experience
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <a href="skills.html"
+                class="nav-link">
+
+                <span class="nav-number">
+                    05
+                </span>
+
+                <span data-i18n="skills">
+                    Skills
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <a href="projects.html"
+                class="nav-link">
+
+                <span class="nav-number">
+                    06
+                </span>
+
+                <span data-i18n="projects">
+                    Projects
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <a href="achievements.html"
+                class="nav-link">
+
+                <span class="nav-number">
+                    07
+                </span>
+
+                <span data-i18n="achievements">
+                    Achievements
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <a href="certificates.html"
+                class="nav-link">
+
+                <span class="nav-number">
+                    08
+                </span>
+
+                <span data-i18n="certificates">
+                    Certificates
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <a href="interactive.html"
+                class="nav-link">
+
+                <span class="nav-number">
+                    09
+                </span>
+
+                <span data-i18n="interactive">
+                    Interactive Zone
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <a href="contact.html"
+                class="nav-link">
+
+                <span class="nav-number">
+                    10
+                </span>
+
+                <span data-i18n="contact">
+                    Contact
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </nav>
+
+
+        <div class="side-menu-footer">
+
+            <span data-i18n="menuFooter">
+                Let's build something meaningful.
+            </span>
+
+
+            <div class="menu-socials">
+
+                <a href="#" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="#" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =====================================================
+         ABOUT PAGE
+    ====================================================== -->
+
+    <main class="inner-page">
+
+
+        <!-- PAGE HERO -->
+
+        <section class="inner-hero">
+
+            <div class="section-container">
+
+                <span class="section-eyebrow">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <span>
+                        02 / About
+                    </span>
+
+                </span>
+
+
+                <h1>
+                    About <span>Me</span>
+                </h1>
+
+
+                <p>
+                    A little about the person behind the
+                    projects, ideas and code.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT INTRO -->
+
+        <section class="about-intro-section">
+
+            <div class="section-container about-grid">
+
+
+                <!-- PROFILE CARD -->
+
+                <div class="about-profile-card">
+
+                    <div class="about-image-frame">
+
+                        <img src="../images/profile.jpg"
+                            alt="Moganavel Venkatachalam">
+
+                    </div>
+
+
+                    <div class="about-profile-bottom">
+
+                        <span>
+                            AI & Data Science
+                        </span>
+
+                        <strong>
+                            Developer
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- INTRO TEXT -->
+
+                <div class="about-content">
+
+                    <span class="about-small-title">
+                        Hello there 👋
+                    </span>
+
+
+                    <h2>
+                        I like turning
+                        <span>ideas</span>
+                        into reality.
+                    </h2>
+
+
+                    <p>
+                        I am Moganavel Venkatachalam,
+                        an Artificial Intelligence and
+                        Data Science graduate with an
+                        interest in software development,
+                        artificial intelligence and
+                        practical technology solutions.
+                    </p>
+
+
+                    <p>
+                        My technical background includes
+                        Python, Java, web technologies,
+                        data analysis and AI/ML tools.
+                        I enjoy exploring different areas
+                        of technology and building projects
+                        that solve practical problems.
+                    </p>
+
+
+                    <p>
+                        I am particularly interested in
+                        continuously learning, improving
+                        my problem-solving abilities and
+                        turning concepts into working
+                        applications.
+                    </p>
+
+
+                    <div class="about-tags">
+
+                        <span>
+                            AI / ML
+                        </span>
+
+                        <span>
+                            Data Science
+                        </span>
+
+                        <span>
+                            Java
+                        </span>
+
+                        <span>
+                            Web Development
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PERSONAL APPROACH -->
+
+        <section class="about-values-section">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <span class="section-eyebrow">
+
+                        <i class="fa-solid fa-compass"></i>
+
+                        My Approach
+
+                    </span>
+
+                    <h2>
+                        How I approach technology.
+                    </h2>
+
+                </div>
+
+
+                <div class="values-grid">
+
+
+                    <article class="value-card">
+
+                        <div class="value-number">
+                            01
+                        </div>
+
+                        <div class="value-icon">
+
+                            <i class="fa-solid fa-lightbulb"></i>
+
+                        </div>
+
+                        <h3>
+                            Curiosity
+                        </h3>
+
+                        <p>
+                            I enjoy exploring new concepts,
+                            technologies and different ways
+                            of solving a problem.
+                        </p>
+
+                    </article>
+
+
+                    <article class="value-card">
+
+                        <div class="value-number">
+                            02
+                        </div>
+
+                        <div class="value-icon">
+
+                            <i class="fa-solid fa-puzzle-piece"></i>
+
+                        </div>
+
+                        <h3>
+                            Problem Solving
+                        </h3>
+
+                        <p>
+                            I focus on understanding the
+                            actual problem before deciding
+                            how technology should be used.
+                        </p>
+
+                    </article>
+
+
+                    <article class="value-card">
+
+                        <div class="value-number">
+                            03
+                        </div>
+
+                        <div class="value-icon">
+
+                            <i class="fa-solid fa-rotate"></i>
+
+                        </div>
+
+                        <h3>
+                            Continuous Learning
+                        </h3>
+
+                        <p>
+                            Every project gives me an
+                            opportunity to learn something
+                            new and improve my skills.
+                        </p>
+
+                    </article>
+
+
+                    <article class="value-card">
+
+                        <div class="value-number">
+                            04
+                        </div>
+
+                        <div class="value-icon">
+
+                            <i class="fa-solid fa-users"></i>
+
+                        </div>
+
+                        <h3>
+                            Collaboration
+                        </h3>
+
+                        <p>
+                            I value communication,
+                            teamwork and the ability to
+                            explain technical ideas clearly.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- QUICK PROFILE -->
+
+        <section class="about-facts-section">
+
+            <div class="section-container">
+
+                <div class="facts-card">
+
+                    <div class="fact-item">
+
+                        <span>
+                            Degree
+                        </span>
+
+                        <strong>
+                            B.Tech
+                        </strong>
+
+                        <small>
+                            AI & Data Science
+                        </small>
+
+                    </div>
+
+
+                    <div class="fact-divider"></div>
+
+
+                    <div class="fact-item">
+
+                        <span>
+                            CGPA
+                        </span>
+
+                        <strong>
+                            8.35
+                        </strong>
+
+                        <small>
+                            Undergraduate
+                        </small>
+
+                    </div>
+
+
+                    <div class="fact-divider"></div>
+
+
+                    <div class="fact-item">
+
+                        <span>
+                            Focus
+                        </span>
+
+                        <strong>
+                            AI + Web
+                        </strong>
+
+                        <small>
+                            Development
+                        </small>
+
+                    </div>
+
+
+                    <div class="fact-divider"></div>
+
+
+                    <div class="fact-item">
+
+                        <span>
+                            Mindset
+                        </span>
+
+                        <strong>
+                            Learn
+                        </strong>
+
+                        <small>
+                            Build & Improve
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <div class="footer-brand">
+
+                <span class="brand-mark">
+                    M
+                </span>
+
+                <div>
+
+                    <strong>
+                        Moganavel Venkatachalam
+                    </strong>
+
+                    <span>
+                        AI & Data Science Developer
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-copy">
+
+                <p>
+                    ©
+                    <span id="copyrightYear"></span>
+                    Moganavel Venkatachalam
+                </p>
+
+                <span>
+                    All Rights Reserved.
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,984 @@
+/* =====================================================
+   MOGANAVEL PORTFOLIO — ADMIN THEME
+   Uses the exact public portfolio theme
+===================================================== */
+
+:root {
+    --deep-red: #ff2929;
+    --coral: #FFA896;
+    --dark-red: #ffffff;
+    --burgundy: #38000A;
+
+    --white: #FFFFFF;
+    --soft-white: #F8F6F5;
+
+    --text-main: #FFFFFF;
+    --text-muted: #E8D9D9;
+
+    --background: #38000A;
+    --surface: #4A0A12;
+    --surface-2: #5A0B13;
+
+    --border: rgba(255, 255, 255, 0.12);
+
+    --shadow:
+            0 20px 60px rgba(0, 0, 0, 0.28);
+
+    --transition:
+            0.35s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --container: 1400px;
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+
+    min-height: 100vh;
+
+    font-family:
+            "Inter",
+            sans-serif;
+
+    background:
+            var(--background);
+
+    color:
+            var(--text-main);
+
+    line-height: 1.6;
+
+    overflow-x: hidden;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+input,
+textarea,
+select {
+    outline: none;
+}
+
+
+/* =====================================================
+   MAIN ADMIN LAYOUT
+===================================================== */
+
+.admin-layout {
+    width: min(100% - 40px, var(--container));
+
+    min-height: 100vh;
+
+    margin: 0 auto;
+
+    padding: 35px 0 50px;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.admin-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-bottom: 25px;
+
+    padding: 22px 26px;
+
+    background:
+            rgba(74, 10, 18, 0.86);
+
+    backdrop-filter:
+            blur(18px);
+
+    -webkit-backdrop-filter:
+            blur(18px);
+
+    border:
+            1px solid var(--border);
+
+    border-radius:
+            18px;
+
+    box-shadow:
+            var(--shadow);
+}
+
+
+.admin-header h1 {
+
+    margin: 0;
+
+    font-family:
+            "Space Grotesk",
+            sans-serif;
+
+    font-size:
+            1.7rem;
+
+    color:
+            var(--white);
+}
+
+
+.admin-muted {
+
+    color:
+            var(--text-muted);
+
+    font-size:
+            0.9rem;
+}
+
+
+/* =====================================================
+   MAIN GRID
+===================================================== */
+
+.admin-grid {
+
+    display:
+            grid;
+
+    grid-template-columns:
+        235px 1fr;
+
+    gap:
+            24px;
+
+    align-items:
+            start;
+}
+
+
+/* =====================================================
+   SIDEBAR NAVIGATION
+===================================================== */
+
+.admin-nav {
+
+    position:
+            sticky;
+
+    top:
+            25px;
+
+    display:
+            flex;
+
+    flex-direction:
+            column;
+
+    gap:
+            7px;
+
+    padding:
+            14px;
+
+    background:
+            rgba(74, 10, 18, 0.86);
+
+    backdrop-filter:
+            blur(18px);
+
+    -webkit-backdrop-filter:
+            blur(18px);
+
+    border:
+            1px solid var(--border);
+
+    border-radius:
+            18px;
+
+    box-shadow:
+            var(--shadow);
+}
+
+
+.admin-nav button {
+
+    width:
+            100%;
+
+    padding:
+            12px 14px;
+
+    text-align:
+            left;
+
+    color:
+            var(--text-muted);
+
+    background:
+            transparent;
+
+    border:
+            1px solid transparent;
+
+    border-radius:
+            10px;
+
+    transition:
+            all var(--transition);
+}
+
+
+.admin-nav button:hover {
+
+    color:
+            var(--white);
+
+    background:
+            rgba(205, 28, 24, 0.16);
+
+    border-color:
+            rgba(255, 168, 150, 0.15);
+
+    transform:
+            translateX(3px);
+}
+
+
+.admin-nav button.active {
+
+    color:
+            var(--white);
+
+    background:
+            var(--deep-red);
+
+    border-color:
+            var(--deep-red);
+
+    box-shadow:
+            0 8px 25px rgba(205, 28, 24, 0.25);
+}
+
+
+/* =====================================================
+   CARDS
+===================================================== */
+
+.admin-card {
+
+    padding:
+            25px;
+
+    background:
+            rgba(74, 10, 18, 0.86);
+
+    backdrop-filter:
+            blur(18px);
+
+    -webkit-backdrop-filter:
+            blur(18px);
+
+    border:
+            1px solid var(--border);
+
+    border-radius:
+            18px;
+
+    box-shadow:
+            var(--shadow);
+}
+
+
+.admin-card h2 {
+
+    margin-top:
+            0;
+
+    margin-bottom:
+            18px;
+
+    font-family:
+            "Space Grotesk",
+            sans-serif;
+
+    color:
+            var(--white);
+}
+
+
+/* =====================================================
+   DASHBOARD STATISTICS
+===================================================== */
+
+.admin-stats {
+
+    display:
+            grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap:
+            16px;
+}
+
+
+.admin-stat {
+
+    padding:
+            22px;
+
+    background:
+            var(--surface-2);
+
+    border:
+            1px solid var(--border);
+
+    border-radius:
+            15px;
+
+    color:
+            var(--text-muted);
+
+    transition:
+            all var(--transition);
+}
+
+
+.admin-stat:hover {
+
+    transform:
+            translateY(-3px);
+
+    border-color:
+            rgba(255, 168, 150, 0.25);
+
+    box-shadow:
+            0 15px 35px rgba(0, 0, 0, 0.22);
+}
+
+
+.admin-stat strong {
+
+    display:
+            block;
+
+    margin-top:
+            6px;
+
+    font-family:
+            "Space Grotesk",
+            sans-serif;
+
+    font-size:
+            2rem;
+
+    color:
+            var(--coral);
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.admin-btn {
+
+    display:
+            inline-flex;
+
+    align-items:
+            center;
+
+    justify-content:
+            center;
+
+    gap:
+            7px;
+
+    padding:
+            10px 16px;
+
+    color:
+            var(--white);
+
+    background:
+            var(--deep-red);
+
+    border:
+            1px solid var(--deep-red);
+
+    border-radius:
+            9px;
+
+    font-weight:
+            600;
+
+    transition:
+            all var(--transition);
+}
+
+
+.admin-btn:hover {
+
+    background:
+            var(--dark-red);
+
+    border-color:
+            var(--dark-red);
+
+    transform:
+            translateY(-2px);
+
+    box-shadow:
+            0 8px 25px rgba(205, 28, 24, 0.25);
+}
+
+
+.admin-danger {
+
+    background:
+            transparent;
+
+    color:
+            var(--coral);
+
+    border-color:
+            rgba(255, 168, 150, 0.35);
+}
+
+
+.admin-danger:hover {
+
+    color:
+            var(--white);
+
+    background:
+            var(--dark-red);
+
+    border-color:
+            var(--dark-red);
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.admin-table {
+
+    width:
+            100%;
+
+    margin-top:
+            20px;
+
+    border-collapse:
+            collapse;
+}
+
+
+.admin-table th,
+.admin-table td {
+
+    padding:
+            14px 12px;
+
+    text-align:
+            left;
+
+    border-bottom:
+            1px solid var(--border);
+}
+
+
+.admin-table th {
+
+    color:
+            var(--coral);
+
+    font-size:
+            0.78rem;
+
+    font-weight:
+            700;
+
+    text-transform:
+            uppercase;
+
+    letter-spacing:
+            0.08em;
+}
+
+
+.admin-table td {
+
+    color:
+            var(--text-muted);
+}
+
+
+.admin-table tbody tr {
+
+    transition:
+            background var(--transition);
+}
+
+
+.admin-table tbody tr:hover {
+
+    background:
+            rgba(205, 28, 24, 0.08);
+}
+
+
+.admin-actions {
+
+    display:
+            flex;
+
+    gap:
+            8px;
+
+    flex-wrap:
+            wrap;
+}
+
+
+/* =====================================================
+   FORMS
+===================================================== */
+
+.admin-form {
+
+    display:
+            flex;
+
+    flex-direction:
+            column;
+
+    gap:
+            14px;
+}
+
+
+.admin-form input,
+.admin-form textarea,
+.admin-form select {
+
+    width:
+            100%;
+
+    padding:
+            12px 14px;
+
+    color:
+            var(--white);
+
+    background:
+            var(--surface-2);
+
+    border:
+            1px solid var(--border);
+
+    border-radius:
+            9px;
+
+    transition:
+            all var(--transition);
+}
+
+
+.admin-form input::placeholder,
+.admin-form textarea::placeholder {
+
+    color:
+            rgba(232, 217, 217, 0.55);
+}
+
+
+.admin-form input:focus,
+.admin-form textarea:focus,
+.admin-form select:focus {
+
+    border-color:
+            var(--coral);
+
+    box-shadow:
+            0 0 0 3px rgba(255, 168, 150, 0.10);
+}
+
+
+.admin-form textarea {
+
+    min-height:
+            130px;
+
+    resize:
+            vertical;
+}
+
+
+.admin-form label {
+
+    display:
+            flex;
+
+    align-items:
+            center;
+
+    gap:
+            8px;
+
+    color:
+            var(--text-muted);
+}
+
+
+.admin-form label input[type="checkbox"] {
+
+    width:
+            auto;
+
+    accent-color:
+            var(--deep-red);
+}
+
+
+/* =====================================================
+   LOGIN
+===================================================== */
+
+.admin-login {
+
+    width:
+            min(430px, 100%);
+
+    margin:
+            12vh auto;
+}
+
+
+.admin-login h1 {
+
+    margin-top:
+            0;
+
+    margin-bottom:
+            8px;
+
+    font-family:
+            "Space Grotesk",
+            sans-serif;
+}
+
+
+.admin-login p {
+
+    line-height:
+            1.5;
+}
+
+
+.admin-login .admin-btn {
+
+    width:
+            100%;
+
+    padding:
+            13px;
+}
+
+
+/* =====================================================
+   ERROR / SMALL TEXT
+===================================================== */
+
+.admin-error {
+
+    min-height:
+            20px;
+
+    color:
+            var(--coral);
+
+    font-size:
+            0.9rem;
+}
+
+
+.admin-small {
+
+    font-size:
+            0.85rem;
+}
+
+
+/* =====================================================
+   SCROLLBAR
+===================================================== */
+
+::-webkit-scrollbar {
+
+    width:
+            9px;
+}
+
+
+::-webkit-scrollbar-track {
+
+    background:
+            var(--burgundy);
+}
+
+
+::-webkit-scrollbar-thumb {
+
+    background:
+            var(--deep-red);
+
+    border-radius:
+            20px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+
+    background:
+            var(--coral);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1050px) {
+
+    .admin-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .admin-nav {
+
+        position:
+                static;
+
+        display:
+                grid;
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .admin-stats {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .admin-layout {
+
+        width:
+                min(100% - 24px, var(--container));
+
+        padding-top:
+                18px;
+    }
+
+
+    .admin-header {
+
+        flex-direction:
+                column;
+
+        align-items:
+                stretch;
+    }
+
+
+    .admin-nav {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .admin-stats {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .admin-card {
+
+        padding:
+                18px;
+
+        overflow-x:
+                auto;
+    }
+
+
+    .admin-table {
+
+        min-width:
+                650px;
+    }
+}
+/* =====================================================
+   PROJECT / ADMIN FORM ENHANCEMENTS
+===================================================== */
+
+.form-header {
+    margin-bottom: 24px;
+}
+
+.form-header h2 {
+    margin-bottom: 6px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-field label {
+    color: var(--white);
+    font-size: 0.92rem;
+    font-weight: 700;
+}
+
+.form-field small {
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    opacity: 0.8;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.featured-option {
+    padding: 15px 16px;
+
+    background: rgba(205, 28, 24, 0.08);
+
+    border: 1px solid var(--border);
+
+    border-radius: 12px;
+}
+
+.checkbox-label {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+    cursor: pointer;
+}
+
+.checkbox-label > input {
+    margin-top: 4px;
+    width: 18px !important;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.checkbox-label span {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.checkbox-label strong {
+    color: var(--white);
+}
+
+.checkbox-label small {
+    color: var(--text-muted);
+    font-size: 0.78rem;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    padding-top: 8px;
+}
+
+.admin-secondary {
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.admin-secondary:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions .admin-btn {
+        width: 100%;
+    }
+}

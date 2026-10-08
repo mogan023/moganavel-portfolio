@@ -1,0 +1,1 @@
+package com.mogan.portfolio.repo; import com.mogan.portfolio.model.*;import org.springframework.data.jpa.repository.JpaRepository;import java.util.*; public interface ProjectLikeRepository extends JpaRepository<ProjectLike,Long>{Optional<ProjectLike> findByProjectAndVisitorId(Project p,String visitorId);long countByProject(Project p);}
