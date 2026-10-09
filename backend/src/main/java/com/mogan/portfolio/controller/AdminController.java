@@ -88,8 +88,7 @@ public class AdminController {
 
         SecurityContextHolder.setContext(context);
 
-        // Prevent session fixation
-        request.changeSessionId();
+
 
         request.getSession(true)
                 .setAttribute(
