@@ -2124,7 +2124,7 @@ handleHeaderScroll();
    PORTFOLIO FULL-STACK ENHANCEMENTS
 ===================================================== */
 
-const API_BASE = window.PORTFOLIO_API_BASE || "http://localhost:8080";
+const API_BASE = window.PORTFOLIO_API_BASE || "https://moganavel-portfolio.onrender.com";
 const PortfolioAPI = {
     async request(path, options = {}) {
         const headers = { "Content-Type": "application/json", ...(options.headers || {}) };
